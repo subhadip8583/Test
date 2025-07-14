@@ -7,7 +7,7 @@ export default function OrderScreen({ route }) {
   const [name, setName] = useState('');
 
   const handleOrder = () => {
-    axios.post('http://192.168.29.77:8000/order/', {
+    axios.post('https://django-backend-n2b5.onrender.com/order/', {
       book_id: book.id,
       customer_name: name
     })

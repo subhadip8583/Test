@@ -6,7 +6,7 @@ export default function BookList({ navigation }) {
   const [books, setBooks] = useState([]);
 
   useEffect(() => {
-    axios.get('http://192.168.29.77:8000/books/')
+    axios.get('https://django-backend-n2b5.onrender.com/books/')
       .then(res => setBooks(res.data))
       .catch(err => console.error(err));
   }, []);
